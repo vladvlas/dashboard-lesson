@@ -14,10 +14,13 @@
 
 <body>
   <div class="site-container">
+    @include('partials/sidebar.html')
+   <main>
     @include('partials/header.html')
-    <img src="img/cover.jpg" alt="Обложка" style="width: 100%;">
+    @include('partials/search-customers.html')
+    @include('partials/lastest-customers.html')
     @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример инклуда -->
+   </main>
   </div>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
