@@ -1,0 +1,22 @@
+.footer {
+    
+
+    &__copy {
+        font-size: 14px;
+        line-height: 157%;
+        font-weight: 400;
+        color: var(--color-main);
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 157%;
+        color: var(--color-dark-grey);
+    }
+}
+
+.footer__content {
+    padding: 8px 24px 24px;
+    border-top: 1px solid var(--color-input);
+}

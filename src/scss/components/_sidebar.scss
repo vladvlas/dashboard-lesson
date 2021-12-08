@@ -1,0 +1,105 @@
+.sidebar {
+    width: 280px;
+    background-color: var(--color-main);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 97vh;
+        margin-top: 24px;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        padding: 8px 40px;
+        width: 248px;
+        height: 40px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--color-sidebar);
+
+        &:hover {
+            background-color: var(--color-main-mod);
+            color: var(--color-green);
+            transition: all .3s;
+
+            & svg {
+                 //stroke: var(--color-green);
+                
+                 & path {
+                     fill: var(--color-green);
+                 }
+            }
+        }
+
+        svg {
+            position: absolute;
+            margin-right: 10px;
+            top: 11px;
+            left: 15px;
+        }
+        
+
+        &--active {
+            background-color: var(--color-main-mod);
+            color: var(--color-green);
+
+            & svg {
+                 //stroke: var(--color-green);
+                
+                 & path {
+                     fill: var(--color-green);
+                 }
+            }
+        }
+
+    }
+
+    &__text {
+        font-size: 16px;
+
+        &--light {
+            font-weight: 500;
+            line-height: 175%;
+            color: var(--color-sidebar-light);
+        }
+        
+        &--dark {
+            font-weight: 400;
+            line-height: 157%;
+            margin-bottom: 16px;
+            color: var(--color-light-grey);
+        }
+    }
+}
+
+.sidebar__footer {
+    padding-top: 24px;
+    border-top: 1px solid #1F2937;
+}
+
+.sidebar__btn {
+    position: relative;
+    display: block;
+    padding: 8px 0;
+    margin-bottom: 24px;
+    width: 248px;
+    color: var(--color-white);
+    background-color: var(--color-green);
+
+    &::after {
+        position: absolute;
+        content: url(../../img/buy.svg);
+        top: 10px;
+        left: 163px;
+    
+    }
+}
+
+.sidebar-container {
+    padding: 0 16px;
+}

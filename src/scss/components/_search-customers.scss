@@ -1,0 +1,91 @@
+.search-customers {
+    margin-bottom: 32px;
+    
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 8px 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--color-white);
+        background-color: var(--color-purple);
+
+        
+    }
+
+    &__search {
+        position: relative;
+        padding: 32px 24px;
+        height: 120px;
+        box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+        border-radius: 8px;
+        background-color: var(--color-white);
+
+        &::before {
+            position: absolute;
+            content: url(../../img/search.svg);
+            top: 48px;
+            left: 35px;
+        }
+
+        &::after {
+            position: absolute;
+            content: 'Search customer';
+            padding: 0 3px;
+            font-size: 12px;
+            line-height: 12px;
+            left: 36px;
+            top: 27px;
+            background-color: var(--color-white);
+            color: var(--color-dark-grey);
+        }
+
+        input {
+            padding-left: 30px;
+            border: 1px solid var(--color-input);
+            border-radius: 8px;
+            width: 400px;
+            height: 50px;
+    
+        }
+    }
+}
+
+.btn-empty {
+    color: var(--color-purple);
+    background-color: transparent;
+}
+
+.btn-import {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url(../../img/import.svg);
+        top: 10px;
+        left: 0px;
+    }
+}
+
+.btn-export {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url(../../img/export.svg);
+        top: 10px;
+        left: 0px;
+    }
+}
+
+
+
+
