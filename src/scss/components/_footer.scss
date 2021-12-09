@@ -14,6 +14,11 @@
         line-height: 157%;
         color: var(--color-dark-grey);
     }
+
+    &__link {
+        text-decoration: underline;
+        color: var(--color-dark-grey);
+    }
 }
 
 .footer__content {

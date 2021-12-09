@@ -27,9 +27,68 @@
     height: 50px;
     background-color: var(--color-sidebar-light);
 
+    @include w900 {
+        padding-left: 10px;
+    }
+
     &__item {
         max-width: 286px;
         width: 100%;
+
+        @include w1450 {
+            margin-right: 10px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.btn-name {
+    @include w1000 {
+        max-width: 150px;
+    }
+
+    @include w900 {
+        max-width: 120px;
+    }
+}
+
+.btn-email {
+    @include w1000 {
+        max-width: 150px;
+    }
+
+    
+}
+
+.btn-location {
+    @include w1450 {
+        max-width: 150px;
+    }
+
+    
+}
+
+.btn-phone {
+    @include w1450 {
+        max-width: 150px;
+    }
+
+    @include w900 {
+        max-width: 100px;
+    }
+}
+
+.btn-register {
+    @include w1450 {
+        max-width: 150px;
+    }
+
+    @include w900 {
+        max-width: 100px;
+        
     }
 }
 
@@ -38,10 +97,16 @@
     font-size: 12px;
     line-height: 250%;
 
+    @include w900 {
+        line-height: 150%;
+    }
+
 
     span {
         margin-left: 0;
     }
+
+
 }
 
 .order {
@@ -51,6 +116,10 @@
     height: 72px;
     padding-left: 16px;
     border-bottom: 1px solid var(--color-input);
+
+    @include w900 {
+        padding-left: 10px;
+    }
     
     a {
         color: var(--color-main);
@@ -64,6 +133,10 @@
 
     &__name {
         margin-left: 16px;
+
+        @include w900 {
+            margin-left: 5px;
+        }
     }
 }
 
@@ -72,6 +145,62 @@
     max-width: 286px;
     width: 100%;
     overflow-wrap: break-word;
+    font-size: 14px;
+    line-height: 157%;
+    font-weight: 400;
+
+    @include w1450 {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.order__user {
+    font-size: 16px;
+    line-height: 150%;
+    @include w1000 {
+        max-width: 150px;
+    }
+
+    @include w900 {
+        max-width: 120px;
+    }
+}
+
+.order__email {
+    word-wrap: break-word;
+    @include w1000 {
+        max-width: 150px;
+    }
+}
+
+.order__location {
+    @include w1450 {
+        max-width: 150px;
+    }
+}
+
+.order__phone {
+    @include w1450 {
+        max-width: 150px;
+    }
+
+    @include w900 {
+        max-width: 100px;
+    }
+}
+
+.order__register {
+    @include w1450 {
+        max-width: 150px;
+    }
+
+    @include w900 {
+        max-width: 100px;
+    }
 }
 
 .pagination {

@@ -82,6 +82,10 @@ main {
   //margin: 0 auto;
   padding: 0 24px;
 
+  @include w1000 {
+    padding: 0 15px;
+  }
+
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
